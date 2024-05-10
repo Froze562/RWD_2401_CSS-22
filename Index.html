@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light</title>
+<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+<!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Css link -->
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <section id="menu-bar">
+        <div>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fa-solid fa-bars" id="btn"></i>
+                <!-- <i class="fa-solid fa-times" id="cancel"></i> -->
+            </label>
+        </div>
+        <div id="menu">
+            <h1>
+                <label for="check">
+                    <i class="fa-solid fa-bars" id="nav-close"></i>
+                </label>
+                <i class="fa-solid fa-beat-fade">Menu</i>
+            </h1>
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i>Profile</a></li>
+                <li><a href="#"><i class="fas fa-tv"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fab fa-gripfire"></i>Trending</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i>Saved</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i>Settings</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="light" class="padd slider">
+        <div>
+            <button class="on">Turn On</button>
+            <img class="light" src="./Img/pic_bulboff.gif" alt="">
+            <button class="off">Turn Off</button>
+        </div>
+    </section>
+
+    <section id="range" class="padd">
+        <div class="slider">
+            <input type="range" min="0" max="100" value="0" class="range">
+            <h1 class="contain">0</h1>
+        </div>
+    </section>
+
+    <section id="counter" class="slider">
+        <div class="counter row">
+            <button class="dec">-</button>
+            <input class="result" type="text" value="1">
+            <button class="inc">+</button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
